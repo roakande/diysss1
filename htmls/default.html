@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>LoadAppropriateScreen</title>
+<link rel="shortcut icon" href="/wole2/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/wole2/favicon.ico" type="image/x-icon">
+<style type="text/css">
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+}
+html, body {
+	width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+    window.onload = function calculater() {
+
+        //the function calculates the width and height of info3 and info6 so as to determine the pixel of their images
+        var percentW, percentH;
+        var w, h, w1, h1, w2, h2, w3, h3;
+
+        //supported on modern browsers
+        w1 = window.innerWidth; 
+        h1 = window.innerHeight; 
+       
+        //compatible with earlier browsers such IE 6, 7, 8 & 9
+        w2 = document.body.clientWidth;
+        h2 = document.body.clientHeight;
+        
+        //this is expected to work on all browsers
+		//works only on (mobile) firefox but not on (mobile) internet explorer and (mobile) chrome
+        w3 = document.documentElement.clientWidth;
+        h3 = document.documentElement.clientHeight;
+   
+	//therefore, it is avdisable (as God leads me) to try all and do as follows
+	//w = w1 + w2 + w3;
+	//h = h1 + h2 + h3;
+	
+	//percentW = w / 300;
+    //percentH = h / 300;
+	
+	w = w1; h = h1;
+	//w = w2; h = h2;
+	//w = w3; h = h3;
+	
+	percentW = w / 100;
+    percentH = h / 100;
+	
+	
+
+	if((w>=2600) && (h>=1500))
+        {
+            window.location = "home_pc.html";//pc
+        }
+	else if(((w<2600)&&(w>2500)) && ((h>1400)&&(h<1500)))
+        {
+            window.location = "home_pc.html";//pc
+        }
+        else if(((w<2000)&&(w>1900)) && ((h>1000)&&(h<1100)))
+        {
+            window.location = "home_pc.html";//pc
+        }
+	else if(((w<1400)&&(w>1300)) && ((h>700)&&(h<800)))
+        {
+            window.location = "home_pc.html";//pc
+        }
+    else if(((w<1800)&&(w>1300)) && ((h>500)&&(h<900)))//toshiba pc
+        {
+            window.location = "home_pc.html";//pc
+        }
+	else if(((w<1300)&&(w>1200)) && ((h>750)&&(h<850)))
+        {
+            window.location = "home_pc.html";//pc
+        }
+	else if(((w<1300)&&(w>1200)) && ((h>600)&&(h<800)))
+        {
+            window.location = "home_pc.html";//pc
+        }
+        else if(((w<550)&&(w>450)) && ((h>700)&&(h<800)))
+        {
+            window.location = "home_mp.html";//tabs
+        }
+        else if(((w<400)&&(w>300)) && ((h>600)&&(h<700)))
+        {
+            window.location = "home_mp.html";//tabs/phones
+        }
+        else if(((w<400)&&(w>300)) && ((h>450)&&(h<600)))
+        {
+            window.location = "home_mp.html";//phones
+        }
+	else if((w>=300) && (h>=450))
+        {
+            window.location = "/home_mp.html";//phones
+        }
+        else
+        {
+            alert("\nDevice's screen size w = " + w + " ; h = " + h + " not recognized. Good day!");
+        }
+    }
+    
+</script>
+
+</head>
+<body>
+
+<div>pls wait, you will be re-directed to the expected page</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
