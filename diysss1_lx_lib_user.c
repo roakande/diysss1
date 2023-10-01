@@ -18,7 +18,7 @@
    > you should always change the port_no from time to time
    
    > on any of devices connected to the server, open a browser and type, for example
-   	 192.168.1.100:2050/wole2/default.html
+   	 192.168.1.100:2050/default.html
    	 and press enter
    	
    > follow the steps below to run the sever
@@ -43,7 +43,7 @@ int main()
 {
 	char* port_no = "2050";
 	char* ip_addr = "192.168.1.100";
-	char* htmlRootPath = ".";//or wherever the .html files are
+	char* htmlRootPath = "/home/wole/Documents/codes/GitHub/froGitHub/diysss1-main/htmls";//or wherever the .html files are
 	
 	doSocket(ip_addr, port_no, htmlRootPath);
 	
